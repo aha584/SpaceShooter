@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float maxHealth;
-    public float currentHealth;
+    [SerializeField] private float maxHealth;
+    [SerializeField] private float currentHealth;
 
     private void Start()
     {

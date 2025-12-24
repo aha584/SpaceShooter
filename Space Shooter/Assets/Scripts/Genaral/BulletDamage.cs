@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletDamage : MonoBehaviour
 {
-    public float bulletDamage;
+    [SerializeField] private float bulletDamage;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
