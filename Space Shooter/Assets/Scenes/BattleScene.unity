@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 400984694}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.812, z: 0}
+  m_LocalPosition: {x: 0, y: 0.864, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -536,6 +536,11 @@ GameObject:
   - component: {fileID: 1711105496}
   - component: {fileID: 1711105498}
   - component: {fileID: 1711105499}
+  - component: {fileID: 1711105501}
+  - component: {fileID: 1711105500}
+  - component: {fileID: 1711105502}
+  - component: {fileID: 1711105503}
+  - component: {fileID: 1711105504}
   m_Layer: 6
   m_Name: Short-Lazer-Ship
   m_TagString: Player
@@ -644,7 +649,186 @@ MonoBehaviour:
   bulletPrefab: {fileID: 518817053796750247, guid: 8d56e73462569664fa0a771e0fb6e429,
     type: 3}
   shootingInterval: 0.1
-  bulletOffset: {x: 0, y: 0.8, z: 0}
+  bulletOffset: {x: 0, y: 0.88, z: 0}
+--- !u!50 &1711105500
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105495}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &1711105501
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105495}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.64, y: -3.8799999}
+      - {x: 1.64, y: -4.12}
+      - {x: 1.88, y: -4.12}
+      - {x: 2.48, y: -3.6799998}
+      - {x: 2.24, y: -3.1599998}
+      - {x: 1.8, y: -2.48}
+      - {x: 2.08, y: -2.12}
+      - {x: 1.88, y: -1.52}
+      - {x: 2.12, y: -1.4399999}
+      - {x: 2.36, y: -1.7199999}
+      - {x: 3.32, y: -1.92}
+      - {x: 3.6799998, y: -1.8399999}
+      - {x: 4.6, y: -2}
+      - {x: 4.64, y: -1.88}
+      - {x: 4.7999997, y: -1.16}
+      - {x: 4.7999997, y: -0.76}
+      - {x: 3.84, y: -0.16}
+      - {x: 3.6399999, y: 0.52}
+      - {x: 3.36, y: 1.4}
+      - {x: 3.04, y: 1.4399999}
+      - {x: 2.7708194, y: 1.4461663}
+      - {x: 2.5480504, y: 1.4299564}
+      - {x: 2.4238467, y: 1.4780092}
+      - {x: 2.2121723, y: 1.5585071}
+      - {x: 1, y: 1.76}
+      - {x: 0.8000014, y: 2.0800412}
+      - {x: 0.671832, y: 2.539807}
+      - {x: 0.48077136, y: 3.2621217}
+      - {x: 0.16, y: 4}
+      - {x: 0.04, y: 4.12}
+      - {x: -0.08, y: 4.12}
+      - {x: -0.40279573, y: 3.2489552}
+      - {x: -0.73914444, y: 2.4237323}
+      - {x: -1, y: 1.76}
+      - {x: -1.8213158, y: 1.760809}
+      - {x: -2.0242836, y: 1.7007748}
+      - {x: -2.279251, y: 1.6227214}
+      - {x: -2.5175714, y: 1.3174449}
+      - {x: -2.762159, y: 1.3910315}
+      - {x: -3.04, y: 1.4}
+      - {x: -3.3999999, y: 1.36}
+      - {x: -3.7389672, y: 0.5728159}
+      - {x: -4.110272, y: -0.037257418}
+      - {x: -4.785339, y: -0.52733046}
+      - {x: -4.7999997, y: -0.84}
+      - {x: -4.7999997, y: -1}
+      - {x: -4.785339, y: -1.3172461}
+      - {x: -4.64, y: -1.88}
+      - {x: -4.589618, y: -2.0207624}
+      - {x: -4.16, y: -1.9807622}
+      - {x: -3.405805, y: -1.9319072}
+      - {x: -2.7761862, y: -1.807331}
+      - {x: -2.3999999, y: -1.68}
+      - {x: -1.76, y: -1.68}
+      - {x: -2.04, y: -1.88}
+      - {x: -1.88, y: -2.52}
+      - {x: -2.44, y: -3.56}
+      - {x: -2.44, y: -3.6399999}
+      - {x: -2.1599998, y: -3.8799999}
+      - {x: -1.8, y: -4.12}
+      - {x: -0.59999996, y: -3.6}
+      - {x: -0.64, y: -3.8799999}
+      - {x: -0.16, y: -4.04}
+      - {x: 0.56, y: -3.9599998}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1711105502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b559c69675e431941b9fc4869cee228c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExploAndDestroy
+  explosionPrefab: {fileID: 2428012471643827389, guid: ec00095159e649c48b767be730138e71,
+    type: 3}
+--- !u!114 &1711105503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c7c048bfb0031340bf068398a19b99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 10
+  currentHealth: 0
+--- !u!114 &1711105504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f982debbdb3beca45ab933cc5c82d53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollideWithEnemy
+  collideDamage: 10
 --- !u!1001 &1872761234
 PrefabInstance:
   m_ObjectHideFlags: 0

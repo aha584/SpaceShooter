@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6451620557970337996}
   - component: {fileID: 5289382642743874296}
   - component: {fileID: 5429981764708974238}
+  - component: {fileID: 3683058688982575716}
+  - component: {fileID: 8764389866006275882}
   m_Layer: 7
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -180,3 +182,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyExploAndDestroy
   explosionPrefab: {fileID: 2428012471643827389, guid: ec00095159e649c48b767be730138e71,
     type: 3}
+--- !u!114 &3683058688982575716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673384728427897997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f2365183fc7842822bc6c78ab782f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 5
+  currentHealth: 0
+--- !u!114 &8764389866006275882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673384728427897997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1046dddd0cf726e408b0b6f47ff828dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollideWithPlayer
+  collideDamage: 3

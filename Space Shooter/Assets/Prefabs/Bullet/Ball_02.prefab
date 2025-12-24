@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4434631640904346231}
   - component: {fileID: 8940363009997251819}
   - component: {fileID: 4247582634454607690}
+  - component: {fileID: 3610125162108701568}
   m_Layer: 6
   m_Name: Ball_02
   m_TagString: Untagged
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e553ddad3b35444aaa6b587ce07992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletMovement
-  bulletSpeed: 10
+  bulletSpeed: 15
 --- !u!61 &8940363009997251819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,3 +180,16 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &3610125162108701568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518817053796750247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb7a34b2f30b284cb208e7526aa596b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletDamage
+  bulletDamage: 1

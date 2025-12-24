@@ -1,15 +1,14 @@
 using UnityEngine;
 
-public class EnemyExploAndDestroy : MonoBehaviour
+public class ExploAndDestroy : MonoBehaviour
 {
     public GameObject explosionPrefab;
 
-    private void OnTriggerEnter2D(Collider2D other) => Die();
+    private void OnTriggerEnter2D(Collider2D other) => Explo();
 
-    private void Die()
+    public void Explo()
     {
         GameObject exploClone = Instantiate(explosionPrefab, transform.position, transform.rotation);
         Destroy(exploClone, 1);
-        Destroy(gameObject);
     }
 }
