@@ -4,6 +4,8 @@ public class ShootingBullet : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float shootingInterval;
+    public Vector3 bulletOffset;
+
     private float lastBulletTime;
 
     private void Start()
@@ -22,6 +24,6 @@ public class ShootingBullet : MonoBehaviour
 
     private void ShootBullet()
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, transform.position + bulletOffset, transform.rotation);
     }
 }
