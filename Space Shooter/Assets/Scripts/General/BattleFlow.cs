@@ -5,11 +5,10 @@ public class BattleFlow : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject gameWinUI;
 
-    public GameObject enemySpawnerGO;
-    public EnemySpawner enemySpawner;
-
     public GameObject playerObject;
-    PlayerHealth playerHealth; 
+    PlayerHealth playerHealth;
+    public GameObject enemySpawnerGO;
+    EnemySpawner enemySpawner;
     public GameObject bgMusic;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

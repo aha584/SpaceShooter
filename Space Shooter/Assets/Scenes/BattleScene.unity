@@ -803,6 +803,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 1923063571}
   gameWinUI: {fileID: 1822543780}
   playerObject: {fileID: 1711105495}
+  enemySpawnerGO: {fileID: 342670747}
   bgMusic: {fileID: 1099523987}
 --- !u!4 &274484415
 Transform:
@@ -992,21 +993,18 @@ MonoBehaviour:
     spawnDelay: 1.5
     flyPath: {fileID: 11648066}
     duration: 10
-    nextWaveDelay: 7
   - enemyPrefab: {fileID: 7673384728427897997, guid: 539aaeec25d9d6147803b64b8f70043f,
       type: 3}
     numberOfEnemys: 6
     spawnDelay: 1.5
     flyPath: {fileID: 821716694}
     duration: 12
-    nextWaveDelay: 6
   - enemyPrefab: {fileID: 7673384728427897997, guid: 539aaeec25d9d6147803b64b8f70043f,
       type: 3}
     numberOfEnemys: 8
     spawnDelay: 1.5
     flyPath: {fileID: 11648066}
     duration: 10
-    nextWaveDelay: 9
 --- !u!4 &342670749
 Transform:
   m_ObjectHideFlags: 0
