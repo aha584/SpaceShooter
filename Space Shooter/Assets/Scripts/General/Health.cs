@@ -3,19 +3,23 @@ using System;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float maxHealth;
-    [SerializeField] private float currentHealth;
+    public float maxHealth;
+    public float currentHealth;
+
     public Action onDead;
+    public Action onHealthChanged;
     public static int currentEnemyCount = 0;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        onHealthChanged?.Invoke();
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        onHealthChanged?.Invoke();
         if (currentHealth <= 0) Die();
     }
 

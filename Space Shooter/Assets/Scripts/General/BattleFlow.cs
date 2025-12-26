@@ -20,6 +20,7 @@ public class BattleFlow : MonoBehaviour
     }
     private void Update()
     {
+        if (playerObject == null) return;
         playerHealth.CheckWin();
     }
     private void OnGameOver()
