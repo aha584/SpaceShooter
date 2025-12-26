@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 5429981764708974238}
   - component: {fileID: 3683058688982575716}
   - component: {fileID: 8764389866006275882}
+  - component: {fileID: 4931661470692050963}
   m_Layer: 7
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -527,6 +528,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollideWithPlayer
   collideDamage: 3
+--- !u!114 &4931661470692050963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673384728427897997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1013a6f662820504ea17d77e0b3efc3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyPathAgent
+  flyPathObject: {fileID: 0}
+  duration: 0
+  nextIndex: 1
 --- !u!1 &8075441971456363311
 GameObject:
   m_ObjectHideFlags: 0
