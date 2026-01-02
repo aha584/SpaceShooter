@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToMainMenuButton : MonoBehaviour
 {
-    public void onReturnButtonClick()
+    public void OnReturnButtonClick()
     {
         SceneManager.LoadScene("MainMenu");
     }

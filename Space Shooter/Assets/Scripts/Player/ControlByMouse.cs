@@ -13,7 +13,7 @@ public class ControlByMouse : MonoBehaviour
         worldPoint.z = 0;
         transform.position = worldPoint;*/
         var mouse = Mouse.current;
-        if (mouse == null) return;
+        if (mouse == null || !mouse.leftButton.isPressed) return;
 
         Vector2 mousePos = mouse.position.ReadValue();
         Vector3 worldPos = mainCam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));

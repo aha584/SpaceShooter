@@ -28,6 +28,6 @@ public class Health : MonoBehaviour
         ExploAndDestroy exploScript = transform.gameObject.GetComponent<ExploAndDestroy>();
         exploScript.Explo();
         onDead?.Invoke();
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

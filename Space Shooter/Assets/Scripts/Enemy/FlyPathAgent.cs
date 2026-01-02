@@ -24,7 +24,7 @@ public class FlyPathAgent : MonoBehaviour
     }
     private void Update()
     {
-        Destroy(gameObject, duration + 0.5f);
+        Destroy(gameObject, duration + 0.3f);
         if (nextIndex >= waypointsList.Count)
         {
             return;
