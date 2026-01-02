@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class ShootingBullet : MonoBehaviour
+public class ShootingBulletMouse : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float shootingInterval;
@@ -16,7 +17,10 @@ public class ShootingBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Input.GetMouseButton(0)) return;
+        var mouse = Mouse.current;
+        if (mouse == null) return;
+
+        if (!mouse.leftButton.isPressed) return;
         if (Time.time - lastBulletTime < shootingInterval) return;
         ShootBullet();
         lastBulletTime = Time.time;

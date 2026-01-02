@@ -29,6 +29,7 @@ public class BattleFlow : MonoBehaviour
     }
     private void OnGameOver()
     {
+        Time.timeScale = 0f;
         gameOverUI.SetActive(true);
         bgMusic.SetActive(false);
     }
