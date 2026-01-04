@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b0abd4a7b87f742af8e72920fa704b, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: Assembly-CSharp::LevelInfo
+  enemyWaves:
+  - enemyPrefab: {fileID: 7673384728427897997, guid: 539aaeec25d9d6147803b64b8f70043f,
+      type: 3}
+    numberOfEnemys: 10
+    spawnDelay: 1.5
+    flyPath: {fileID: 7426029322923985072, guid: e0fb41c4d74d2a54993d2b051b105bde,
+      type: 3}
+    duration: 10
+  - enemyPrefab: {fileID: 7673384728427897997, guid: 539aaeec25d9d6147803b64b8f70043f,
+      type: 3}
+    numberOfEnemys: 6
+    spawnDelay: 1.5
+    flyPath: {fileID: 193945207530157361, guid: 0a19a550a16d58d45bff12d2139270ba,
+      type: 3}
+    duration: 12
+  - enemyPrefab: {fileID: 7673384728427897997, guid: 539aaeec25d9d6147803b64b8f70043f,
+      type: 3}
+    numberOfEnemys: 8
+    spawnDelay: 1.5
+    flyPath: {fileID: 7426029322923985072, guid: e0fb41c4d74d2a54993d2b051b105bde,
+      type: 3}
+    duration: 10
+  bossPrefab: {fileID: 8344790464293556420, guid: 34f071ac7a467424986799699770a6ec,
+    type: 3}

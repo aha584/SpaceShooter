@@ -24,7 +24,7 @@ public class BattleFlow : MonoBehaviour
     private void Update()
     {
         if (playerObject == null) return;
-        if (enemySpawner.IsEndWave()) return;
+        if (enemySpawner.IsRemainWave()) return;
         playerHealth.CheckWin();
     }
     private void OnGameOver()
@@ -35,7 +35,9 @@ public class BattleFlow : MonoBehaviour
     }
     private void OnGameWin()
     {
+        Time.timeScale = 0f;
         gameWinUI.SetActive(true);
         bgMusic.SetActive(false);
+        enemySpawner.currentLevel++;
     }
 }

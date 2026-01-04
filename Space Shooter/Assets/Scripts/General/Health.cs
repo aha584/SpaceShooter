@@ -23,10 +23,16 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0) Die();
     }
 
+    private void OnDestroy()
+    {
+        onDead?.Invoke();
+        gameObject.SetActive(false);
+    }
+
     protected virtual void Die()
     {
         ExploAndDestroy exploScript = transform.gameObject.GetComponent<ExploAndDestroy>();
-        exploScript.Explo();
+        exploScript.Explo(false);
         onDead?.Invoke();
         gameObject.SetActive(false);
     }
